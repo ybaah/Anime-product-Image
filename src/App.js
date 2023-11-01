@@ -1,5 +1,4 @@
 
-import './styles/main.scss';
 import { ProductPic } from './components/product';
 
 function App() {

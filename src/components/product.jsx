@@ -1,5 +1,110 @@
 import React, { useState } from "react";
 import Pic from "../utils/data.json";
+import styled from "styled-components";
+
+// Styled Components
+const ImgDetail = styled.div`
+	font-family: Arial, Helvetica, sans-serif;
+
+	.imgHead {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.imgFilter {
+		margin-top: 10px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+
+		input {
+			width: 200px;
+			margin-right: 20px;
+			height: 20px;
+			border-radius: 5px;
+			padding: 5px;
+			border: 1px solid grey;
+			cursor: pointer;
+		}
+
+		select {
+			margin-right: 10px;
+			height: 32px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid grey;
+			cursor: pointer;
+		}
+	}
+`;
+
+const ImgList = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+
+	.imgDiv {
+		flex: 0 0 30%;
+		padding: 5px;
+	}
+`;
+
+const ImgDiv = styled.div`
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	transition: box-shadow 0.3s ease;
+
+	img {
+		width: 350px;
+		height: 320px;
+		border-radius: 20px;
+		box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+		margin: 10px 40px;
+		display: inline-block;
+		cursor: pointer;
+		transition: transform 0.3s;
+	}
+
+	img:hover {
+		transform: scale(0.9);
+	}
+
+	.imgTitle,
+	.imgDes,
+	.imgCategory,
+	.imgPrice {
+		font-weight: 500;
+	}
+
+	.imgCategory {
+		color: grey;
+	}
+
+	.imgPrice {
+		color: #9bb136;
+	}
+
+	&:hover {
+		box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+	}
+`;
+
+const Pagination = styled.ul`
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	button {
+		margin-right: 10px;
+		border: 1px solid grey;
+		border-radius: 5px;
+		height: 40px;
+		width: 40px;
+		font-weight: 600;
+		cursor: pointer;
+	}
+`;
 
 export const ProductPic = () => {
 	// const [products, setProducts] = useState(Pic);
@@ -59,7 +164,7 @@ export const ProductPic = () => {
 		setCurrentPage(pageNumber);
 	};
 	return (
-		<div className="imgDetail">
+		<ImgDetail className="imgDetail">
 			<h1 className="imgHead">Anime Images Product</h1>
 			<div className="imgFilter">
 				<input
@@ -95,9 +200,9 @@ export const ProductPic = () => {
 					{/* Add more category options if needed */}
 				</select>
 			</div>
-			<div className="imgList">
+			<ImgList className="imgList">
 				{currentItems.map((item) => (
-					<div className="imgDiv" key={item.id}>
+					<ImgDiv className="imgDiv" key={item.id}>
 						<img src={item.image_url} alt={item.title} className="imgUrl" />
 						<div className="imgTitle">
 							Name: <b>{item.title}</b>
@@ -105,11 +210,11 @@ export const ProductPic = () => {
 						<div className="imgDes">Info: {item.description}</div>
 						<div className="imgCategory">Category: {item.category}</div>
 						<div className="imgPrice">Price: ${item.price}</div>
-					</div>
+					</ImgDiv>
 				))}
-			</div>
+			</ImgList>
 			<div>
-				<ul className="pagination">
+				<Pagination className="pagination">
 					{Array.from({ length: totalPages }, (_, i) => (
 						<li
 							key={i}
@@ -120,8 +225,8 @@ export const ProductPic = () => {
 							</button>
 						</li>
 					))}
-				</ul>
+				</Pagination>
 			</div>
-		</div>
+		</ImgDetail>
 	);
 };
