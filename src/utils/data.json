@@ -1,0 +1,98 @@
+[
+	{
+		"id":1,
+		"image_url": "https://i.pinimg.com/originals/82/d4/92/82d4926dcf09dd4c73eb1a6c0300c135.jpg",
+		"title": "Naruto Uzumaki",
+		"price": 29.99,
+		"description": "Naruto is a young ninja with a dream of becoming the strongest ninja in his village.",
+		"category": "Shonen"
+	},
+	{
+		"id":2,
+		"image_url": "https://i.pinimg.com/736x/06/6a/e7/066ae79c961041fca3a1745a838f5f29.jpg",
+		"title": "Goku",
+		"price": 34.99,
+		"description": "Goku is a Saiyan warrior with incredible strength and the ability to transform into more powerful forms.",
+		"category": "Shonen"
+	},
+	{
+		"id":3,
+		"image_url": "https://thumb.spokesman.com/rAgmwM5fNZfV6BHaYkuZ8tR6BZk=/media.spokesman.com/photos/2020/09/09/SailorMoonMainImage.png",
+		"title": "Sailor Moon",
+		"price": 24.99,
+		"description": "Usagi Tsukino, also known as Sailor Moon, is a magical girl who fights evil forces to protect the world.",
+		"category": "Magical"
+	},
+	{
+		"id":4,
+		"image_url": "https://i.pinimg.com/originals/f0/af/cb/f0afcbce7ed4a7df7b822964501bf995.jpg",
+		"title": "Luffy",
+		"price": 27.99,
+		"description": "Monkey D. Luffy is a pirate with the ability to stretch his body like rubber.",
+		"category": "Shonen"
+	},
+	{
+		"id":5,
+		"image_url": "https://staticg.sportskeeda.com/editor/2021/11/5ea8a-16360291439038.png?w=840",
+		"title": "Mikasa Ackerman",
+		"price": 22.99,
+		"description": "Mikasa is a skilled fighter and one of the last remaining members of the Ackerman clan.",
+		"category": "Shonen"
+	},
+	{
+		"id":6,
+		"image_url": "https://i.pinimg.com/originals/03/db/78/03db78b650b3f6fae612a0414d016aa8.jpg",
+		"title": "Kaneki Ken",
+		"price": 26.99,
+		"description": "Kaneki is a half-ghoul, half-human who struggles to find his place in a world of monsters.",
+		"category": "Horror"
+	},
+	{
+		"id":7,
+		"image_url": "https://staticg.sportskeeda.com/editor/2023/05/a16c7-16834371619594-1920.jpg",
+		"title": "Nezuko Kamado",
+		"price": 25.99,
+		"description": "Nezuko is a demon who seeks to protect her brother Tanjiro and regain her humanity.",
+		"category": "Horror"
+	},
+	{
+		"id":8,
+		"image_url": "https://www.looper.com/img/gallery/every-power-sasuke-has-on-naruto-explained/l-intro-1663193400.jpg",
+		"title": "Sasuke Uchiha",
+		"price": 28.99,
+		"description": "Sasuke is a skilled ninja with a complex history and a powerful desire for revenge.",
+		"category": "Shonen"
+	},
+	{
+		"id":9,
+		"image_url": "https://thicc.mywaifulist.moe/waifus/506/231c4cb4ea4ae78e855768854ecff295cc1b560bc159ab46a4664dea8b0c87b0_thumb.png",
+		"title": "Sakura Kinomoto",
+		"price": 23.99,
+		"description": "Sakura is a magical girl tasked with capturing powerful Clow Cards.",
+		"category": "Magical"
+	},
+	{
+		"id":10,
+		"image_url": "https://miro.medium.com/v2/resize:fit:1080/1*gvNJefrW_2FTvRyjfyHHKQ.jpeg",
+		"title": "Light Yagami",
+		"price": 29.99,
+		"description": "Light Yagami gains a notebook with the power to kill anyone whose name is written in it.",
+		"category": "Thriller"
+	},
+	{
+		"id":11,
+		"image_url": "https://practicaltyping.com/wp-content/uploads/2020/03/rukia.jpg",
+		"title": "Rukia Kuchiki",
+		"price": 24.99,
+		"description": "Rukia is a Soul Reaper tasked with guiding souls to the afterlife and fighting evil spirits.",
+		"category": "Shonen"
+	},
+	{
+		"id":12,
+		"image_url": "https://staticg.sportskeeda.com/editor/2023/05/8952f-16851667509731-1920.jpg?w=840",
+		"title": "Gon Freecss",
+		"price": 27.99,
+		"description": "Gon is a young hunter determined to find his father, who is a legendary hunter.",
+		"category": "Adventure"
+	}
+]
